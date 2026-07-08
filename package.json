@@ -1,0 +1,44 @@
+{
+  "name": "hotel-management-app",
+  "version": "1.0.0",
+  "description": "Hotel management system with check-in/out, billing, invoices, authentication, and payment gateway integration",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "nodemon src/index.js",
+    "test": "jest",
+    "seed": "node src/scripts/seedData.js"
+  },
+  "keywords": [
+    "hotel",
+    "management",
+    "check-in",
+    "check-out",
+    "billing",
+    "invoice",
+    "authentication",
+    "payment"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "express": "^4.18.2",
+    "pg": "^8.8.0",
+    "dotenv": "^16.0.3",
+    "bcryptjs": "^2.4.3",
+    "jsonwebtoken": "^9.0.0",
+    "joi": "^17.9.1",
+    "cors": "^2.8.5",
+    "helmet": "^7.0.0",
+    "morgan": "^1.10.0",
+    "uuid": "^9.0.0",
+    "pdfkit": "^0.13.0",
+    "nodemailer": "^6.9.1",
+    "stripe": "^12.0.0"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.20",
+    "jest": "^29.5.0",
+    "supertest": "^6.3.3"
+  }
+}
